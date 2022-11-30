@@ -21,7 +21,7 @@ public class FuncionesRecursivas {
         double resultado;
 
         // ! Exponemos numA a num
-        resultado = Math.pow(numA, num);
+        resultado = potencia(numA, num);
 
         // ! Devolvemos el resultado
         return resultado;
@@ -31,15 +31,11 @@ public class FuncionesRecursivas {
         // ^ Definimos la variable resultado
         int resultado = 0;
 
-        // ^ Definimos la variable fib0 y fib1
-        int fib0 = 0;
-        int fib1 = 1;
-
-        // ! Mediante un bucle for calculamos la serie de Fibonacci
-        for (int i = 1; i < num; i++) {
-            resultado = fib0 + fib1;
-            fib0 = fib1;
-            fib1 = resultado;
+        // ! Calculamos la serie de Fibonacci de forma recursiva
+        if (num == 0 || num == 1) {
+            resultado = num;
+        } else {
+            resultado = serieFibonacci(num - 1) + serieFibonacci(num - 2);
         }
 
         // ! Devolvemos el resultado

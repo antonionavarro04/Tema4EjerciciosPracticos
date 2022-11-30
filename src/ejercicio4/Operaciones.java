@@ -21,7 +21,7 @@ public class Operaciones {
     public double multiplicacion() {
         return num1 * num2;
     }
-
+    
     // ^ Definimos el método división
     public double division() {
         return num1 / num2;
