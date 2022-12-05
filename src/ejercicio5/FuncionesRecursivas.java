@@ -5,11 +5,13 @@ package ejercicio5;
 public class FuncionesRecursivas {
     static int sumatorio(int num){
         // ^ Definimos la variable resultado
-        int resultado = 0;
+        int resultado;
 
-        // ! Mediante un bucle for sumamos los numeros entre 1 y num
-        for (int i = 2; i < num; i++) {
-            resultado += i;
+        // ! Mediante una función recursiva, calculamos el resultado
+        if(num == 1){
+            resultado = 1;
+        } else{
+            resultado = num + sumatorio(num - 1);
         }
 
         // ! Devolvemos el resultado
@@ -20,8 +22,12 @@ public class FuncionesRecursivas {
         // ^ Definimos la variable resultado
         double resultado;
 
-        // ! Exponemos numA a num
-        resultado = potencia(numA, num);
+        // ! De forma recursiva calculamos numA ^ num - 1
+        if (num == 0) {
+            resultado = 1;
+        } else {
+            resultado = numA * potencia(numA, (num - 1));
+        }
 
         // ! Devolvemos el resultado
         return resultado;
