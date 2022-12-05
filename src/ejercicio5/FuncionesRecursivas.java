@@ -47,4 +47,20 @@ public class FuncionesRecursivas {
         // ! Devolvemos el resultado
         return resultado;
     }
+
+    // ? Hecho para testear el funcionamiento recursivo
+    // static int factorial(int num){
+    //     // ^ Definimos la variable resultado
+    //     int resultado;
+
+    //     // ! Calculamos el factorial de forma recursiva
+    //         if (num == 1){
+    //             resultado = 1;
+    //         } else{
+    //             resultado = num * factorial(num - 1);
+    //         }   
+
+    //     // ! Devolvemos el resultado
+    //     return resultado;
+    // }
 }
