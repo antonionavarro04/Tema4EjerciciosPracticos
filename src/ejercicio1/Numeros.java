@@ -37,7 +37,7 @@ public class Numeros {
         // ! Mientras el numero sea mayor que 0, seguira ejecutandose
         while (num > 0) {
             // ^ Guardamos el ultimo digito del numero en la variable auxiliar
-            aux = aux * 10 + num % 10;
+            aux *= 10 + num % 10;
 
             // ! Eliminamos el ultimo digito del numero
             num /= 10;
