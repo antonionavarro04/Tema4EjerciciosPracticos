@@ -33,6 +33,6 @@ public class Main {
         // ! Mostramos los resultados
         System.out.println("El sumatorio de los numeros entre 1 y " + num + " es: " + FuncionesRecursivas.sumatorio(num));
         System.out.println(numA + " elevado a " + num + " es: " + FuncionesRecursivas.potencia(numA, num));
-        System.out.println("El numero " + num + " de la serie de Fibonacci esta en la posición: " + FuncionesRecursivas.serieFibonacci(num));
+        System.out.println("La posición " + num + " de la serie de Fibonacci es: " + FuncionesRecursivas.serieFibonacci(num));
     }
 }
